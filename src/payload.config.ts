@@ -9,7 +9,7 @@ import Spirits from './collections/taxonomy/Spirits';
 import { createGroup } from './utils/createGroups';
 
 export default buildConfig({
-  serverURL: 'http://localhost:3000',
+  serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
   admin: {
     user: Users.slug,
     css: path.resolve(__dirname, './custom/styles.scss'),
